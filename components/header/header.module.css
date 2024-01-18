@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    height: var(--header-height);
+    z-index: var(--header-zIndex);
+    background-color: rgba(var(--header-bg), 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

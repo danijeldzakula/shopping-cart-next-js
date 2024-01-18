@@ -1,0 +1,71 @@
+:root {
+    --header-height: 64px;
+    --header-zIndex: 992;
+    --header-bg: 13,17,23;
+    --official-bg: 13,17,23;
+    --font-apple: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {  
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.618;
+    font-family: var(--font-apple);
+    overflow-y: scroll;
+}
+
+
+main {
+    position: relative;
+}
+
+/* CANVAS */
+/* canvas {
+    width: 100%;
+}
+*/
+
+.react-p5 {
+    display: grid;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1540px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+#nprogress .bar {
+    height: 2px !important;
+    background-color: orange !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--official-bg)
+    }
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: blue orange;
+    }
+    *::-webkit-scrollbar {
+        width: 12px;
+    }
+    *::-webkit-scrollbar-track {
+        background: #212121;
+    }
+    *::-webkit-scrollbar-thumb {
+        background-color: #373737;
+        border-radius: 3px;
+    }
+}
